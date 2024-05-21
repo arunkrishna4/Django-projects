@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <!-- Add your CSS file here if you have one -->
+</head>
+<body>
+    <header>
+        <h1>Registration</h1>
+    </header>
+    <main>
+        <form action="/register" method="post">
+            {% csrf_token %}
+            <label for="ename">ename</label><br>
+            <input type="text" id="ename" name="ename" required><br>
+            <label for="text">Phone number</label><br>
+            <input type="password" id="pno" name="pno" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="text">Address</label><br>
+            <input type="text" id="add" name="add" required><br>
+            <input type="submit" value="Register">
+        </form>
+    </main>
+    <footer>
+        <!-- Add your footer content here -->
+    </footer>
+</body>
+</html>

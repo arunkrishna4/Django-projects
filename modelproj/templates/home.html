@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <Table border="1px"> 
+            <Tr>x
+                <Th>Name</Th>
+                <Th>Phone number</Th>
+                <Th>Email</Th>
+                <Th>Address</Th>
+            </Tr>
+
+            {% for item in EO %}
+            <tr>
+                <td>{{item.name}}</td>
+                <td>{{item.pno}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.add}}</td>
+            </tr>
+            {% endfor %}
+        </Table>
+    </center>
+    
+</body>
+</html>
